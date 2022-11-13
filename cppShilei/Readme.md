@@ -27,3 +27,7 @@
     - const和二级指针结合   [笔记](demo9/readme.md)
 - [demo10](demo10)
     - C++ 左值引用和右值引用[笔记](demo10/readme.md)
+- [demo11](demo11)
+    - const, 指针, 引用的结合使用 [笔记](demo11/readme.md)
+- [demo12](demo12)
+    - C++ new 和 delete [笔记](demo12/readme.md)

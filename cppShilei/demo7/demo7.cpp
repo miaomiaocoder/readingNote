@@ -12,7 +12,7 @@ c++的const是必须初始化的，叫常量
 
 如果对一个const修饰的变量取地址或引用之后修改，会产生未定义行为
 */
-
+#if 0
 #include <iostream>
 
 int main() {
@@ -23,9 +23,10 @@ int main() {
     int *p = (int *)&a;
     *p = 30;
 
-    //没有int b = 20 clang++, g++ 测试结果为 20 30 30 , msvc 测试结果为 20 30 20
+    //没有int b = 20 clang++ 11.0.1-2, g++ 10.2.1 测试结果为 20 30 30 , msvc 测试结果为 20 30 20
     // 有int b = 20以后，测试结果为 30 30 30
     printf("%d %d %d \n", a, *p, *(&a));
 
     return 0;
 }
+#endif
