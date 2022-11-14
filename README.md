@@ -12,5 +12,5 @@
 
 ## 个人学习记录
 
-- 个人cpp学习记录
+- 个人cpp学习记录 [笔记](myCppNote/readme.md)
 
