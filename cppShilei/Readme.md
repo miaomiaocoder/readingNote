@@ -100,3 +100,27 @@
 - [demo23](demo23)
     - 容器空间配置器allocator，改进vector 
     - [MyVectorWithAllocator.cpp](demo23/MyVectorWithAllocator.cpp)
+
+## C++运算符重载
+- [demo24](demo24)
+    - 学习复数类CComplex
+    - [CComplex.cpp](demo24/CComplex)
+- [demo25](demo25)
+    - 模拟实现C++的string类代码
+    - [MyString.cpp](demo25/MyString.cpp)
+- [demo26](demo26)
+    - string 字符串对象的迭代器iterator实现
+    - [MyStringWithIterator.cpp](demo26/MyStringWithIterator.cpp)
+- [demo27](demo27)
+    - vetor容器的iterator实现
+    - [MyVector.cpp](demo27/MyVector.cpp)
+- [demo28](demo28)
+    - 容器的迭代器失效问题
+    - [笔记](demo28/readme.md)
+    - [test1.cpp](demo28/test1.cpp)
+    - [test2.cpp](demo28/test2.cpp)
+    - [test3.cpp](demo28/test3.cpp)
+    - [Vector.cpp](demo28/Vector.cpp)
+- [demo29](demo29)
+    - 深入理解new和delete的原理
+    
