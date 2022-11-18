@@ -123,4 +123,8 @@
     - [Vector.cpp](demo28/Vector.cpp)
 - [demo29](demo29)
     - 深入理解new和delete的原理
-    
+    - [笔记](demo29/readme.md)
+    - [test.cpp](demo29/test.cpp)
+- [demo30](demo30)
+    - new和delete重载实现的对象池应用
+    - [test.cpp](demo30/test.cpp)
