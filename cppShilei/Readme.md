@@ -128,3 +128,38 @@
 - [demo30](demo30)
     - new和delete重载实现的对象池应用
     - [test.cpp](demo30/test.cpp)
+
+## C++继承与多态
+- [demo31](demo31)
+    - 继承的基本意义
+    - [笔记](demo31/readme.md)
+    - [test.cpp](demo31/test.cpp)   
+- [demo32](demo32)
+    - 派生类的构造过程
+    - [笔记](demo32/readme.md)
+    - [test.cpp](demo32/test.cpp)
+- [demo33](demo33)
+    - 重载、隐藏
+    - [笔记](demo33/readme.md)
+    - [test.cpp](demo33/test.cpp)
+- [demo34](demo34)
+    - 虚函数、静态绑定和动态绑定
+    - [笔记](demo34/readme.md)
+    - [test.cpp](demo34/test.cpp)
+    - [main.cpp](demo34/main.cpp)
+- [demo35](demo35)
+    - 虚析构函数
+    - [笔记](demo35/readme.md)
+    - [test.cpp](demo35/test.cpp)
+    - [main.cpp](demo35/main.cpp)
+- [demo36](demo36)
+    - 虚函数和动态绑定
+    - [笔记](demo36/readme.md)
+    - [main.cpp](demo36/main.cpp)
+- [demo37](demo37)
+    - 多态
+    - [笔记](demo37/readme.md)
+    - [main.cpp](demo37/main.cpp)
+- [demo38](demo38)
+    - 抽象类
+    - [main.cpp](demo38/main.cpp)
