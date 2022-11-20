@@ -1,4 +1,3 @@
-
 # 目录
 ## C++内功
 - [demo0](demo0)
@@ -163,3 +162,20 @@
 - [demo38](demo38)
     - 抽象类
     - [main.cpp](demo38/main.cpp)
+- [demo39](demo39)
+    - 继承多态笔试题
+    - 示例1 [test1.cpp](demo39/test1.cpp)
+    - 示例2 [test2.cpp](demo39/test2.cpp)
+    - 示例3 [test3.cpp](demo39/test3.cpp) [test4.cpp](demo39/test4.cpp)
+    - 示例4 [test5.cpp](demo39/test5.cpp)
+- [demo40](demo40)
+    - 虚基类和虚继承
+    - [笔记](demo40/readme.md)
+    - [test1.cpp](demo40/test1.cpp)
+    - [test2.cpp](demo40/test2.cpp)
+- [demo41](demo41)
+    - 菱形继承
+    - [test1.cpp](demo41/test1.cpp)
+    - [test2.cpp])demo41/test2.cpp()
+- [demo42](demo42)
+    - C++的四种类转换
