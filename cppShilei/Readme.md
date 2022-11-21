@@ -216,8 +216,15 @@
     - [main.cpp](demo49/main.cpp)
 - [demo50](demo50)
     - 函数对象
+    - [笔记](demo50/readme.md)
+    - [main.cpp](demo50/main.cpp)
 - [demo51](demo51)
     - 泛型算法和绑定器
+    - [笔记](demo51/readme.md)
+    - [test1.cpp](demo51/test1.cpp)
+    - [test2.cpp](demo51/test2.cpp)
+    - [test3.cpp](demo51/test3.cpp)
+    - [test4.cpp](demo51/test4.cpp)
 - 本章参考资料
     - [C++STL容器内容总结](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792786?spm=1001.2014.3001.5502)
 
