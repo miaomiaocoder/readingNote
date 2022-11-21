@@ -99,6 +99,8 @@
 - [demo23](demo23)
     - 容器空间配置器allocator，改进vector 
     - [MyVectorWithAllocator.cpp](demo23/MyVectorWithAllocator.cpp)
+- 本章参考资料
+    - [C++STL - 容器空间配置器allocator的原理](https://blog.csdn.net/QIANGWEIYUAN/article/details/88721363?spm=1001.2014.3001.5502)
 
 ## C++运算符重载
 - [demo24](demo24)
@@ -127,6 +129,8 @@
 - [demo30](demo30)
     - new和delete重载实现的对象池应用
     - [test.cpp](demo30/test.cpp)
+- 本章参考资料
+    - [C++迭代器iterator详解](https://blog.csdn.net/QIANGWEIYUAN/article/details/89184546?spm=1001.2014.3001.5502)
 
 ## C++继承与多态
 - [demo31](demo31)
@@ -193,15 +197,32 @@
     - [main.cpp](demo44/main.cpp)
 - [demo45](demo45)
     - vector, deque和list对比
+    - [笔记](demo45/readme.md)
+    - [main.cpp](demo45/main.cpp)
 - [demo46](demo46)
     - 容器适配器
+    - [笔记](demo46/readme.md)
+    - [main.cpp](demo46/main.cpp)
 - [demo47](demo47)
     - 无序关联容器
+    - [笔记](demo47/readme.md)
+    - [main.cpp](demo47/main.cpp)
 - [demo48](demo48)
     - 有序关联容器
+    - [main.cpp](demo48/main.cpp)
 - [demo49](demo49)
     - 迭代器iterator
+    - [笔记](demo49/readme.md)
+    - [main.cpp](demo49/main.cpp)
 - [demo50](demo50)
     - 函数对象
 - [demo51](demo51)
     - 泛型算法和绑定器
+- 本章参考资料
+    - [C++STL容器内容总结](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792786?spm=1001.2014.3001.5502)
+
+# 参考链接
+- [【中级】C++开发工程师基础进阶课程-夯实C++基础核心内容](https://ke.qq.com/course/464039#term_id=103626440)
+- [C++STL - 容器空间配置器allocator的原理](https://blog.csdn.net/QIANGWEIYUAN/article/details/88721363?spm=1001.2014.3001.5502)
+- [C++STL 容器内容总结](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792786?spm=1001.2014.3001.5502)
+- [C++ 迭代器iterator详解](https://blog.csdn.net/QIANGWEIYUAN/article/details/89184546?spm=1001.2014.3001.5502)
