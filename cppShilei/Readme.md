@@ -217,16 +217,21 @@
 - [demo50](demo50)
     - 函数对象
     - [笔记](demo50/readme.md)
-    - [main.cpp](demo50/main.cpp)
+    - [test1.cpp](demo50/test1.cpp)
+    - [test2.cpp](demo50/test2.cpp)
+    - [test3.cpp](demo50/test3.cpp)
+    - [test4.cpp](demo50/test4.cpp)
 - [demo51](demo51)
     - 泛型算法和绑定器
     - [笔记](demo51/readme.md)
-    - [test1.cpp](demo51/test1.cpp)
-    - [test2.cpp](demo51/test2.cpp)
-    - [test3.cpp](demo51/test3.cpp)
-    - [test4.cpp](demo51/test4.cpp)
+    - [main.cpp](demo51/main.cpp)
 - 本章参考资料
     - [C++STL容器内容总结](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792786?spm=1001.2014.3001.5502)
+## 大厂开发岗面试问题
+- [demo52](demo52)
+    - 大厂开发岗面试问题解析
+    - [笔记](demo52/readme.md)
+    - [解答](demo52/answer.md)
 
 # 参考链接
 - [【中级】C++开发工程师基础进阶课程-夯实C++基础核心内容](https://ke.qq.com/course/464039#term_id=103626440)

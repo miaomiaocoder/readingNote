@@ -23,6 +23,8 @@
 - [阿秀的学习笔记](https://interviewguide.cn/)
 - [现代 C++ 编程实战(吴咏炜)](https://time.geekbang.org/column/intro/100040501?tab=catalog)
 - [罗剑锋的 C++ 实战笔记](https://time.geekbang.org/column/intro/100051801)
+- [深入 C 语言和程序运行原理](https://time.geekbang.org/column/intro/100100701)
+- [编程高手必学的内存知识](https://time.geekbang.org/column/intro/100094901)
 - [C++开发工程师基础进阶课程（施磊）](https://ke.qq.com/course/464039#term_id=103626440)
 - [C++11教程：C++11新特性大汇总（C语言中文网）](http://c.biancheng.net/cplus/11/)
 - [2020 重学C++重构你的C++知识体系](https://coding.imooc.com/learn/list/414.html)
