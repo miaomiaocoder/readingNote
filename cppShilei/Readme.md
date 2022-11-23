@@ -232,9 +232,38 @@
     - 大厂开发岗面试问题解析
     - [笔记](demo52/readme.md)
     - [解答](demo52/answer.md)
+## C++对象的应用优化、右值引用的优化
+- [demo53](demo53)
+    - 对象使用过程中背后调用了哪些方法
+    - [笔记](demo53/readme.md)
+    - [test1.cpp](demo53/test1.cpp)
+    - [test2.cpp](demo53/test2.cpp)
+- [demo54](demo54)
+    - 对象优化
+    - [笔记](demo54/readme.md)
+    - [test.cpp](demo54/test.cpp)
+- [demo55](demo55)
+    - CMyString
+    - [test.cpp](demo55/test.cpp)
+- [demo56](demo56)
+    - CMyString + 右值引用
+    - [笔记](demo56/readme.md)
+    - [test1.cpp](demo56/test1.cpp)
+    - [test2.cpp](demo56/test1.cpp)
+- [demo57](demo57)
+    - CMyString在vector上应用
+    - [笔记](demo57/readme.md)
+    - [test1.cpp](demo57/test1.cpp)
+    - [test2.cpp](demo57/test2.cpp)
+- [demo58](demo58)
+    - move移动语义和forward完美转发
+    - [笔记](demo58/readme.md)
+    - [test1.cpp](demo58/test1.cpp)
+    - [test2.cpp](demo58/test2.cpp)
 
 # 参考链接
 - [【中级】C++开发工程师基础进阶课程-夯实C++基础核心内容](https://ke.qq.com/course/464039#term_id=103626440)
+- [【高级】C++开发工程师高级进阶课程-提升C++面试和开发能力](https://ke.qq.com/course/422098#term_id=105694590)
 - [C++STL - 容器空间配置器allocator的原理](https://blog.csdn.net/QIANGWEIYUAN/article/details/88721363?spm=1001.2014.3001.5502)
 - [C++STL 容器内容总结](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792786?spm=1001.2014.3001.5502)
 - [C++ 迭代器iterator详解](https://blog.csdn.net/QIANGWEIYUAN/article/details/89184546?spm=1001.2014.3001.5502)
