@@ -260,10 +260,37 @@
     - [笔记](demo58/readme.md)
     - [test1.cpp](demo58/test1.cpp)
     - [test2.cpp](demo58/test2.cpp)
-
+## C++智能指针
+- [demo59](demo59)
+    - 智能指针基础知识
+    - [笔记](demo59/readme.md)
+    - [test1.cpp](demo59/test1.cpp)
+    - [test2.cpp](demo59/test2.cpp)
+    - [test3.cpp](demo59/test3.cpp)
+- [demo60](demo60)
+    - 不带引用计数的智能指针
+    - [笔记](demo60/readme.md)
+    - [test1.cpp](demo60/test1.cpp)
+    - [test2.cpp](demo60/test2.cpp)
+    - [test3.cpp](demo60/test3.cpp)
+- [demo61](demo61)
+    - 模拟实现带引用计数的智能指针
+    - [笔记](demo61/readme.md)
+    - [test.cpp](demo61/test.cpp)
+- [demo62](demo62)
+    - shared_ptr 交叉引用问题
+    - [test1.cpp](demo62/test1.cpp)
+    - [test2.cpp](demo62/test2.cpp)
+- [demo63](demo63)
+    - 多线程访问共享对象的线程安全问题
 # 参考链接
 - [【中级】C++开发工程师基础进阶课程-夯实C++基础核心内容](https://ke.qq.com/course/464039#term_id=103626440)
 - [【高级】C++开发工程师高级进阶课程-提升C++面试和开发能力](https://ke.qq.com/course/422098#term_id=105694590)
-- [C++STL - 容器空间配置器allocator的原理](https://blog.csdn.net/QIANGWEIYUAN/article/details/88721363?spm=1001.2014.3001.5502)
-- [C++STL 容器内容总结](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792786?spm=1001.2014.3001.5502)
+- [C++STL - 容器空间配置器allocator的原理](https://blog.csdn.net/QIANGWEIYUAN/article/details/89184546)
+- [C++STL 容器内容总结](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792786)
 - [C++ 迭代器iterator详解](https://blog.csdn.net/QIANGWEIYUAN/article/details/89184546?spm=1001.2014.3001.5502)
+- [深入掌握C++智能指针](https://blog.csdn.net/QIANGWEIYUAN/article/details/88562935)
+- [现代 C++ 编程实战(吴咏炜)](https://time.geekbang.org/column/intro/100040501?tab=catalog)
+- [罗剑锋的 C++ 实战笔记](https://time.geekbang.org/column/intro/100051801)
+- [深入 C 语言和程序运行原理](https://time.geekbang.org/column/intro/100100701)
+- [编程高手必学的内存知识](https://time.geekbang.org/column/intro/100094901)
