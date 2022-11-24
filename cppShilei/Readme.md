@@ -130,7 +130,7 @@
     - new和delete重载实现的对象池应用
     - [test.cpp](demo30/test.cpp)
 - 本章参考资料
-    - [C++迭代器iterator详解](https://blog.csdn.net/QIANGWEIYUAN/article/details/89184546?spm=1001.2014.3001.5502)
+    - [C++ 迭代器iterator详解](https://blog.csdn.net/QIANGWEIYUAN/article/details/89184546)
 
 ## C++继承与多态
 - [demo31](demo31)
@@ -226,12 +226,14 @@
     - [笔记](demo51/readme.md)
     - [main.cpp](demo51/main.cpp)
 - 本章参考资料
-    - [C++STL容器内容总结](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792786?spm=1001.2014.3001.5502)
+    - [C++STL 容器内容总结](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792786)
+
 ## 大厂开发岗面试问题
 - [demo52](demo52)
     - 大厂开发岗面试问题解析
     - [笔记](demo52/readme.md)
     - [解答](demo52/answer.md)
+
 ## C++对象的应用优化、右值引用的优化
 - [demo53](demo53)
     - 对象使用过程中背后调用了哪些方法
@@ -260,6 +262,7 @@
     - [笔记](demo58/readme.md)
     - [test1.cpp](demo58/test1.cpp)
     - [test2.cpp](demo58/test2.cpp)
+
 ## C++智能指针
 - [demo59](demo59)
     - 智能指针基础知识
@@ -279,18 +282,29 @@
     - [test.cpp](demo61/test.cpp)
 - [demo62](demo62)
     - shared_ptr 交叉引用问题
+    - [笔记](demo62/readme.md)
     - [test1.cpp](demo62/test1.cpp)
     - [test2.cpp](demo62/test2.cpp)
+    - [test3.cpp](demo62/test3.cpp)
 - [demo63](demo63)
     - 多线程访问共享对象的线程安全问题
+    - [test1.cpp](demo63/test1.cpp)
+    - [test2.cpp](demo63/test2.cpp)
+- [demo64](demo64)
+    - 自定义删除器
+    - [笔记](demo64/readme.md)
+    - [test.cpp](demo64/test.cpp)
+- 本章参考资料
+    - [深入掌握C++智能指针](https://blog.csdn.net/QIANGWEIYUAN/article/details/88562935)
+
 # 参考链接
 - [【中级】C++开发工程师基础进阶课程-夯实C++基础核心内容](https://ke.qq.com/course/464039#term_id=103626440)
 - [【高级】C++开发工程师高级进阶课程-提升C++面试和开发能力](https://ke.qq.com/course/422098#term_id=105694590)
 - [C++STL - 容器空间配置器allocator的原理](https://blog.csdn.net/QIANGWEIYUAN/article/details/89184546)
 - [C++STL 容器内容总结](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792786)
-- [C++ 迭代器iterator详解](https://blog.csdn.net/QIANGWEIYUAN/article/details/89184546?spm=1001.2014.3001.5502)
+- [C++ 迭代器iterator详解](https://blog.csdn.net/QIANGWEIYUAN/article/details/89184546)
 - [深入掌握C++智能指针](https://blog.csdn.net/QIANGWEIYUAN/article/details/88562935)
-- [现代 C++ 编程实战(吴咏炜)](https://time.geekbang.org/column/intro/100040501?tab=catalog)
+- [现代 C++ 编程实战(吴咏炜)](https://time.geekbang.org/column/intro/100040501)
 - [罗剑锋的 C++ 实战笔记](https://time.geekbang.org/column/intro/100051801)
 - [深入 C 语言和程序运行原理](https://time.geekbang.org/column/intro/100100701)
 - [编程高手必学的内存知识](https://time.geekbang.org/column/intro/100094901)
