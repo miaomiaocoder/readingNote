@@ -297,6 +297,37 @@
 - 本章参考资料
     - [深入掌握C++智能指针](https://blog.csdn.net/QIANGWEIYUAN/article/details/88562935)
 
+## C++11的bind绑定器和function函数对象
+- [demo65](demo65)
+    - bind1st 和 bind2nd
+    - [笔记](demo65/readme.md)
+    - [test.cpp](demo65/test.cpp)
+- [demo66](demo66)
+    - bind1st 和 bind2nd 底层原理
+    - [笔记](demo66/readme.md)
+    - [test.cpp](demo66/test.cpp)
+- [demo67](demo67)
+    - function 函数对象的应用示例
+    - [笔记](demo67/readme.md)
+    - [test1.cpp](demo67/test1.cpp)
+    - [test2.cpp](demo67/test2.cpp)
+- [demo68](demo68)
+    - 模板的完全特例化和部分特例化
+    - [笔记](demo68/readme.md)
+    - [test1.cpp](demo68/test1.cpp)
+    - [test2.cpp](demo68/test2.cpp)
+    - [test3.cpp](demo68/test3.cpp)
+- [demo69](demo69)
+    - function 函数对象类型的实现原理
+    - [笔记](demo69/readme.md)
+    - [test1.cpp](demo69/test1.cpp)
+    - [test2.cpp](demo69/test2.cpp)
+- [demo70](demo70)
+    - bind 和 function 实现线程池
+    - [笔记](demo70/readme.md)
+    - [test1.cpp](demo70/test1.cpp)
+    - [test2.cpp](demo70/test2.cpp)
+
 # 参考链接
 - [【中级】C++开发工程师基础进阶课程-夯实C++基础核心内容](https://ke.qq.com/course/464039#term_id=103626440)
 - [【高级】C++开发工程师高级进阶课程-提升C++面试和开发能力](https://ke.qq.com/course/422098#term_id=105694590)
