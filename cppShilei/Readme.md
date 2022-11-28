@@ -343,8 +343,25 @@
     - 常用知识点总结
     - [笔记](demo73/readme.md)
 - [demo74](demo74)
-    - 
-
+    - 通过thread类编写C++多线程程序
+    - [笔记](demo74/readme.md)
+    - [test.cpp](demo74/test.cpp)
+- [demo75](demo75)
+    - 线程间互斥-mutex互斥锁和lock_guard
+    - [笔记](readme.md)
+    - [test.cpp](demo75/test.cpp)
+- [demo76](demo76)
+    - 线程间同步通信-生产消费者模型
+    - [笔记](readme.md)
+    - [test.cpp](demo76/test.cpp)
+- [demo77](demo77)
+    - lock_guard和unique_lock
+    - [笔记](readme.md)
+    - [test.cpp](demo77/test.cpp)
+- [demo78](demo78)
+    - 基于CAS操作的atomic原子类型
+    - [笔记](readme.md)
+    - [test.cpp](demo78/test.cpp)
 
 # 参考链接
 - [【中级】C++开发工程师基础进阶课程-夯实C++基础核心内容](https://ke.qq.com/course/464039#term_id=103626440)
