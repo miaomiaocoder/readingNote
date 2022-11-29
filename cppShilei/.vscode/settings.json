@@ -56,6 +56,7 @@
         "unordered_set": "cpp",
         "ratio": "cpp",
         "stop_token": "cpp",
-        "condition_variable": "cpp"
+        "condition_variable": "cpp",
+        "mutex": "cpp"
     }
 }

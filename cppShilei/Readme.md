@@ -337,6 +337,8 @@
     - [笔记](demo72/readme.md)
     - [test1.cpp](demo72/test1.cpp)
     - [test2.cpp](demo72/test2.cpp)
+- 本章参考资料
+    - [C++11 - thread多线程编程，线程互斥和同步通信，死锁问题分析解决](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792621)
 
 ## C++11 知识点汇总
 - [demo73](demo73)
@@ -348,20 +350,47 @@
     - [test.cpp](demo74/test.cpp)
 - [demo75](demo75)
     - 线程间互斥-mutex互斥锁和lock_guard
-    - [笔记](readme.md)
+    - [笔记](demo75/readme.md)
     - [test.cpp](demo75/test.cpp)
 - [demo76](demo76)
     - 线程间同步通信-生产消费者模型
-    - [笔记](readme.md)
+    - [笔记](demo76/readme.md)
     - [test.cpp](demo76/test.cpp)
 - [demo77](demo77)
     - lock_guard和unique_lock
-    - [笔记](readme.md)
+    - [笔记](demo77/readme.md)
     - [test.cpp](demo77/test.cpp)
 - [demo78](demo78)
     - 基于CAS操作的atomic原子类型
-    - [笔记](readme.md)
+    - [笔记](demo78/readme.md)
     - [test.cpp](demo78/test.cpp)
+
+## 设计模式
+- [demo79](demo79)
+    - 单例模式
+    - [笔记](demo79/readme.md)
+    - [test1.cpp](demo79/test1.cpp)
+    - [test2.cpp](demo79/test2.cpp)
+    - [test3.cpp](demo79/test3.cpp)
+    - [C++设计模式 - 单例模式](https://blog.csdn.net/QIANGWEIYUAN/article/details/88544524)
+- [demo80](demo80)
+    - 工厂模式
+    - [笔记](demo80/readme.md)
+    - [test1.cpp](demo80/test1.cpp)
+    - [test2.cpp](demo80/test2.cpp)
+    - [test3.cpp](demo80/test3.cpp)
+    - [C++设计模式 - 简单工厂，工厂方法和抽象工厂](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792594)
+- [demo81](demo81)
+    - 代理模式
+    - [笔记](demo81/readme.md)
+    - [test1.cpp](demo81/test1.cpp)
+    - [test2.cpp](demo81/test2.cpp)
+
+- [demo82](demo82)
+    - 适配器模式
+
+- [demo83](demo83)
+    - 观察者模式
 
 # 参考链接
 - [【中级】C++开发工程师基础进阶课程-夯实C++基础核心内容](https://ke.qq.com/course/464039#term_id=103626440)
