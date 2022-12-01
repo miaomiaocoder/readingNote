@@ -385,12 +385,24 @@
     - [笔记](demo81/readme.md)
     - [test1.cpp](demo81/test1.cpp)
     - [test2.cpp](demo81/test2.cpp)
-
 - [demo82](demo82)
-    - 适配器模式
-
+    - 装饰器模式
+    - [笔记](demo82/readme.md)
+    - [test.cpp](demo82/test.cpp)
 - [demo83](demo83)
+    - 适配器模式
+    - [笔记](demo83/readme.md)
+    - [test.cpp](demo83/test.cpp)
+- [demo84](demo84)
     - 观察者模式
+    - [笔记](demo84/readme.md)
+    - [test.cpp](demo84/test.cpp)
+
+## C++11 容器 emplace 方法原理解析
+- [demo85](demo85)
+    - C++ emplace
+    - [笔记](demo85/readme.md)
+    - [test1.cpp](demo85/)
 
 # 参考链接
 - [【中级】C++开发工程师基础进阶课程-夯实C++基础核心内容](https://ke.qq.com/course/464039#term_id=103626440)
