@@ -30,7 +30,7 @@
 - [demo6](demo6)
     - __cplusplus是什么
     - [demo6.cpp](demo6/demo6.cpp)
-    - [main.cpp](demo6/main.cpp)
+    - [main.cpp](demo6/main.c)
 - [demo7](demo7)
     - const的用法
     - [demo7.cpp](demo7/demo7.cpp)

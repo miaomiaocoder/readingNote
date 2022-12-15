@@ -1,6 +1,6 @@
 #### bind 
 
-```
+```cpp
 #include <functional>
 #include <iostream>
 
