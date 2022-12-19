@@ -12,9 +12,7 @@
 
 ## 个人学习记录
 
-- 个人cpp学习记录 [笔记](myCppNote/readme.md)
-- 面经整理 [目录](interview/readme.md)
-- 面试 [目录](myCppNote/面试/readme.md)
+- [知识点记录](知识点记录/readme.md)
 
 ## 参考链接
 - [C++ Primer 5 Answers(C++11/14)](https://github.com/Mooophy/Cpp-Primer)
