@@ -2,7 +2,7 @@
 - showmebug 平台
 - 三道算法题目，每道25分
 1. [剑指 Offer 42. 连续子数组的最大和](https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)
-2. [1060. 有序数组中的缺失元素]()
+2. [1060. 有序数组中的缺失元素](https://leetcode.cn/problems/missing-element-in-sorted-array/)
 3. [剑指 Offer II 099. 最小路径之和](https://leetcode.cn/problems/0i0mDW/)
     - 题目变形了一下，多了个到指定坐标成本
     ```cpp
