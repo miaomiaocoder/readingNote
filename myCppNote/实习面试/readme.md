@@ -8,3 +8,4 @@
 - [影石 嵌入式开发实习 笔试](interview6.md)
 - [足下科技 C++实习生 一面](interview7.md)
 - [商汤 后端开发实习生 一面](interview8.md)
+- [元象 游戏后台实习生 二面](interview9.md)
