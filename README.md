@@ -9,6 +9,7 @@
 ## 课程 
 
 - cpp 施磊 [笔记](cppShilei/Readme.md)
+- c++ 侯捷 [笔记](cppHoujie/readme.md)
 
 ## 个人学习记录
 
