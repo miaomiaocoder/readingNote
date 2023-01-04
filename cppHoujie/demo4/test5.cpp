@@ -1,10 +1,8 @@
-// 测试 forward_list
+// 测试 queue
 #include <iostream>
 #include <string>
 
-using std::cin;
-using std::cout;
-using std::string;
+using namespace std;
 
 long get_a_target_long() {
     long target = 0;
@@ -37,60 +35,45 @@ int compareStrings(const void* a, const void* b) {
         return 0;
 }
 
-#include <algorithm>
 #include <cstdio>   //snprintf()
 #include <cstdlib>  //abort()
 #include <ctime>
-#include <forward_list>
 #include <iostream>
+#include <queue>
 #include <stdexcept>
 #include <string>
+namespace jj18 {
+void test_queue(long& value) {
+    cout << "\ntest_queue().......... \n";
 
-using namespace std;
-
-namespace jj04 {
-void test_forward_list(long& value) {
-    cout << "\ntest_forward_list().......... \n";
-
-    forward_list<string> c;
+    queue<string> c;
     char buf[10];
 
     clock_t timeStart = clock();
     for (long i = 0; i < value; ++i) {
         try {
             snprintf(buf, 10, "%d", rand());
-            c.push_front(string(buf));
+            c.push(string(buf));
         } catch (exception& p) {
             cout << "i=" << i << " " << p.what() << endl;
             abort();
         }
     }
     cout << "milli-seconds : " << (clock() - timeStart) << endl;
-    cout << "forward_list.max_size()= " << c.max_size() << endl;  // 536870911
-    cout << "forward_list.front()= " << c.front() << endl;
-
-    string target = get_a_target_string();
-    timeStart = clock();
-    auto pItem = find(c.begin(), c.end(), target);
-    cout << "std::find(), milli-seconds : " << (clock() - timeStart) << endl;
-
-    if (pItem != c.end())
-        cout << "found, " << *pItem << endl;
-    else
-        cout << "not found! " << endl;
-
-    timeStart = clock();
-    c.sort();
-    cout << "c.sort(), milli-seconds : " << (clock() - timeStart) << endl;
-
-    c.clear();
+    cout << "queue.size()= " << c.size() << endl;
+    cout << "queue.front()= " << c.front() << endl;
+    cout << "queue.back()= " << c.back() << endl;
+    c.pop();
+    cout << "queue.size()= " << c.size() << endl;
+    cout << "queue.front()= " << c.front() << endl;
+    cout << "queue.back()= " << c.back() << endl;
 }
-}  // namespace jj04
+}  // namespace jj18
 
 int main(int argc, char** argv) {
     long value;
     cin >> value;
-    jj04::test_forward_list(value);
+    jj18::test_queue(value);
 
     return 0;
 }

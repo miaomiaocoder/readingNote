@@ -1,10 +1,8 @@
-// 测试 forward_list
+// 测试deque
 #include <iostream>
 #include <string>
 
-using std::cin;
-using std::cout;
-using std::string;
+using namespace std;
 
 long get_a_target_long() {
     long target = 0;
@@ -41,33 +39,32 @@ int compareStrings(const void* a, const void* b) {
 #include <cstdio>   //snprintf()
 #include <cstdlib>  //abort()
 #include <ctime>
-#include <forward_list>
+#include <deque>
 #include <iostream>
 #include <stdexcept>
 #include <string>
+namespace jj05 {
+void test_deque(long& value) {
+    cout << "\ntest_deque().......... \n";
 
-using namespace std;
-
-namespace jj04 {
-void test_forward_list(long& value) {
-    cout << "\ntest_forward_list().......... \n";
-
-    forward_list<string> c;
+    deque<string> c;
     char buf[10];
 
     clock_t timeStart = clock();
     for (long i = 0; i < value; ++i) {
         try {
             snprintf(buf, 10, "%d", rand());
-            c.push_front(string(buf));
+            c.push_back(string(buf));
         } catch (exception& p) {
             cout << "i=" << i << " " << p.what() << endl;
             abort();
         }
     }
     cout << "milli-seconds : " << (clock() - timeStart) << endl;
-    cout << "forward_list.max_size()= " << c.max_size() << endl;  // 536870911
-    cout << "forward_list.front()= " << c.front() << endl;
+    cout << "deque.size()= " << c.size() << endl;
+    cout << "deque.front()= " << c.front() << endl;
+    cout << "deque.back()= " << c.back() << endl;
+    cout << "deque.max_size()= " << c.max_size() << endl;  // 1073741821
 
     string target = get_a_target_string();
     timeStart = clock();
@@ -80,17 +77,18 @@ void test_forward_list(long& value) {
         cout << "not found! " << endl;
 
     timeStart = clock();
-    c.sort();
-    cout << "c.sort(), milli-seconds : " << (clock() - timeStart) << endl;
+    sort(c.begin(), c.end());
+    cout << "sort(), milli-seconds : " << (clock() - timeStart) << endl;
 
     c.clear();
+    // test_moveable(deque<MyString>(),deque<MyStrNoMove>(), value);
 }
-}  // namespace jj04
+}  // namespace jj05
 
 int main(int argc, char** argv) {
     long value;
     cin >> value;
-    jj04::test_forward_list(value);
+    jj05::test_deque(value);
 
     return 0;
 }

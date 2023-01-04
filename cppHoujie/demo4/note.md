@@ -1,60 +1,12 @@
 # 容器之分类与各种测试（三）
 
-## 测试list
+## 测试 list
 
 ![使用list](使用list.png)
 
+![list结构](list结构.webp)
+
 ```cpp
-#include <iostream>
-#include <string>
-
-using std::cin;
-using std::cout;
-using std::string;
-
-long get_a_target_long() {
-    long target = 0;
-
-    cout << "target (0~" << RAND_MAX << "): ";
-    cin >> target;
-    return target;
-}
-
-string get_a_target_string() {
-    long target = 0;
-    char buf[10];
-
-    cout << "target (0~" << RAND_MAX << "): ";
-    cin >> target;
-    snprintf(buf, 10, "%d", target);
-    return string(buf);
-}
-
-int compareLongs(const void* a, const void* b) {
-    return (*(long*)a - *(long*)b);
-}
-
-int compareStrings(const void* a, const void* b) {
-    if (*(string*)a > *(string*)b)
-        return 1;
-    else if (*(string*)a < *(string*)b)
-        return -1;
-    else
-        return 0;
-}
-
-#include <algorithm>  //find()
-#include <cstdio>     //snprintf()
-#include <cstdlib>    //abort()
-#include <ctime>
-#include <iostream>
-#include <list>
-#include <stdexcept>
-#include <string>
-
-using namespace std;
-
-namespace jj03 {
 void test_list(long& value) {
     cout << "\ntest_list().......... \n";
 
@@ -94,15 +46,6 @@ void test_list(long& value) {
     c.clear();
     // test_moveable(list<MyString>(), list<MyStrNoMove>(), value);
 }
-}  // namespace jj03
-
-int main(int argc, char** argv) {
-    long value;
-    cin >> value;
-    jj03::test_list(value);
-
-    return 0;
-}
 ```
 
 g++ 测试结果
@@ -138,61 +81,13 @@ found, 23456
 c.sort(), milli-seconds : 5098
 ```
 
-## 测试forward_list
+## 测试 forward_list
 
 ![使用容器forward_list](使用容器forward_list.png)
 
+![forward_list结构](forward_list结构.webp)
+
 ```cpp
-#include <iostream>
-#include <string>
-
-using std::cin;
-using std::cout;
-using std::string;
-
-long get_a_target_long() {
-    long target = 0;
-
-    cout << "target (0~" << RAND_MAX << "): ";
-    cin >> target;
-    return target;
-}
-
-string get_a_target_string() {
-    long target = 0;
-    char buf[10];
-
-    cout << "target (0~" << RAND_MAX << "): ";
-    cin >> target;
-    snprintf(buf, 10, "%d", target);
-    return string(buf);
-}
-
-int compareLongs(const void* a, const void* b) {
-    return (*(long*)a - *(long*)b);
-}
-
-int compareStrings(const void* a, const void* b) {
-    if (*(string*)a > *(string*)b)
-        return 1;
-    else if (*(string*)a < *(string*)b)
-        return -1;
-    else
-        return 0;
-}
-
-#include <algorithm>
-#include <cstdio>   //snprintf()
-#include <cstdlib>  //abort()
-#include <ctime>
-#include <forward_list>
-#include <iostream>
-#include <stdexcept>
-#include <string>
-
-using namespace std;
-
-namespace jj04 {
 void test_forward_list(long& value) {
     cout << "\ntest_forward_list().......... \n";
 
@@ -229,15 +124,6 @@ void test_forward_list(long& value) {
 
     c.clear();
 }
-}  // namespace jj04
-
-int main(int argc, char** argv) {
-    long value;
-    cin >> value;
-    jj04::test_forward_list(value);
-
-    return 0;
-}
 ```
 
 msvc x86 测试结果
@@ -254,6 +140,174 @@ found, 23456
 c.sort(), milli-seconds : 5312
 ```
 
-## deque结构
+## 测试 deque
 
 ![deque结构](deque结构.png)
+
+![deque图](deque.webp)
+
+![使用deque](使用deque.png)
+
+```cpp
+void test_deque(long& value) {
+    cout << "\ntest_deque().......... \n";
+
+    deque<string> c;
+    char buf[10];
+
+    clock_t timeStart = clock();
+    for (long i = 0; i < value; ++i) {
+        try {
+            snprintf(buf, 10, "%d", rand());
+            c.push_back(string(buf));
+        } catch (exception& p) {
+            cout << "i=" << i << " " << p.what() << endl;
+            abort();
+        }
+    }
+    cout << "milli-seconds : " << (clock() - timeStart) << endl;
+    cout << "deque.size()= " << c.size() << endl;
+    cout << "deque.front()= " << c.front() << endl;
+    cout << "deque.back()= " << c.back() << endl;
+    cout << "deque.max_size()= " << c.max_size() << endl;  // 1073741821
+
+    string target = get_a_target_string();
+    timeStart = clock();
+    auto pItem = find(c.begin(), c.end(), target);
+    cout << "std::find(), milli-seconds : " << (clock() - timeStart) << endl;
+
+    if (pItem != c.end())
+        cout << "found, " << *pItem << endl;
+    else
+        cout << "not found! " << endl;
+
+    timeStart = clock();
+    sort(c.begin(), c.end());
+    cout << "sort(), milli-seconds : " << (clock() - timeStart) << endl;
+
+    c.clear();
+    // test_moveable(deque<MyString>(),deque<MyStrNoMove>(), value);
+}
+```
+msvc x86 测试deque结果
+```cpp
+1000000
+
+test_deque()..........
+milli-seconds : 3282
+deque.size()= 1000000
+deque.front()= 41
+deque.back()= 12679
+deque.max_size()= 153391689
+target (0~32767): 23456
+std::find(), milli-seconds : 8
+found, 23456
+sort(), milli-seconds : 13377
+```
+
+msvc x64 测试deque结果
+```cpp
+1000000
+
+test_deque()..........
+milli-seconds : 1509
+deque.size()= 1000000
+deque.front()= 41
+deque.back()= 12679
+deque.max_size()= 461168601842738790
+target (0~32767): 23456
+std::find(), milli-seconds : 3
+found, 23456
+sort(), milli-seconds : 5138
+```
+
+## 测试 stack
+
+![使用容器stack](使用容器stack.png)
+
+![stack结构](stack结构.png)
+
+```cpp
+void test_stack(long& value) {
+    cout << "\ntest_stack().......... \n";
+
+    stack<string> c;
+    char buf[10];
+
+    clock_t timeStart = clock();
+    for (long i = 0; i < value; ++i) {
+        try {
+            snprintf(buf, 10, "%d", rand());
+            c.push(string(buf));
+        } catch (exception& p) {
+            cout << "i=" << i << " " << p.what() << endl;
+            abort();
+        }
+    }
+    cout << "milli-seconds : " << (clock() - timeStart) << endl;
+    cout << "stack.size()= " << c.size() << endl;
+    cout << "stack.top()= " << c.top() << endl;
+    c.pop();
+    cout << "stack.size()= " << c.size() << endl;
+    cout << "stack.top()= " << c.top() << endl;
+}
+```
+
+msvc x86 测试stack结果
+```cpp
+1000000
+
+test_stack()..........
+milli-seconds : 3308
+stack.size()= 1000000
+stack.top()= 12679
+stack.size()= 999999
+stack.top()= 17172
+```
+
+## 测试 queue
+
+![使用容器queue](使用容器queue.png)
+
+![queue结构.webp](queue结构.webp)
+
+```cpp
+void test_queue(long& value) {
+    cout << "\ntest_queue().......... \n";
+
+    queue<string> c;
+    char buf[10];
+
+    clock_t timeStart = clock();
+    for (long i = 0; i < value; ++i) {
+        try {
+            snprintf(buf, 10, "%d", rand());
+            c.push(string(buf));
+        } catch (exception& p) {
+            cout << "i=" << i << " " << p.what() << endl;
+            abort();
+        }
+    }
+    cout << "milli-seconds : " << (clock() - timeStart) << endl;
+    cout << "queue.size()= " << c.size() << endl;
+    cout << "queue.front()= " << c.front() << endl;
+    cout << "queue.back()= " << c.back() << endl;
+    c.pop();
+    cout << "queue.size()= " << c.size() << endl;
+    cout << "queue.front()= " << c.front() << endl;
+    cout << "queue.back()= " << c.back() << endl;
+}
+```
+msvc x86 测试结果
+```cpp
+1000000
+
+test_queue()..........
+milli-seconds : 3319
+queue.size()= 1000000
+queue.front()= 41
+queue.back()= 12679
+queue.size()= 999999
+queue.front()= 18467
+queue.back()= 12679
+```
