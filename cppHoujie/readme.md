@@ -31,3 +31,7 @@
     - [test3.cpp](demo4/test3.cpp)  测试 deque 
     - [test4.cpp](demo4/test4.cpp)  测试 stack 
     - [test5.cpp](demo4/test5.cpp)  测试 queue 
+
+- [demo5](demo5)
+    - 容器之分类与各种测试（四）
+    - [笔记](demo5/note.md)

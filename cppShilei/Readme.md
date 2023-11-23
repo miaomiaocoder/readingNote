@@ -337,8 +337,6 @@
     - [笔记](demo72/readme.md)
     - [test1.cpp](demo72/test1.cpp)
     - [test2.cpp](demo72/test2.cpp)
-- 本章参考资料
-    - [C++11 - thread多线程编程，线程互斥和同步通信，死锁问题分析解决](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792621)
 
 ## C++11 知识点汇总
 - [demo73](demo73)
@@ -364,6 +362,8 @@
     - 基于CAS操作的atomic原子类型
     - [笔记](demo78/readme.md)
     - [test.cpp](demo78/test.cpp)
+- 本章参考资料
+    - [C++11 - thread多线程编程，线程互斥和同步通信，死锁问题分析解决](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792621)
 
 ## 设计模式
 - [demo79](demo79)

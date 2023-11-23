@@ -6,6 +6,10 @@
 
 ## 专栏
 
+- [现代 C++ 编程实战(吴咏炜)](https://time.geekbang.org/column/intro/100040501?tab=catalog)
+    - [笔记]
+
+
 ## 课程 
 
 - cpp 施磊 [笔记](cppShilei/Readme.md)
