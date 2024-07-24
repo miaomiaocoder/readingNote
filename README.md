@@ -3,10 +3,15 @@
 ## 书
 
 - c++ primer [笔记](cpp_primer_note/readme.md) 
+- 深入理解Nginx [笔记]
 
 ## 专栏
 
 - [现代 C++ 编程实战(吴咏炜)](https://time.geekbang.org/column/intro/100040501?tab=catalog)
+    - [笔记]
+- [OpenResty 从入门到实战](https://time.geekbang.org/column/intro/100028301?tab=catalog)
+    - [笔记]
+- [Nginx 核心知识 150 讲](https://time.geekbang.org/course/intro/100020301?tab=catalog)
     - [笔记]
 
 
